@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style2.css">
+    <title>Index-Formulario</title>
+</head>
+
+<body>
+
+<center>
+    <h1>Faça a sua reclamação</h1>
+</center>
+
+
+    <form class="formulario" method="post" action="#" >
+          
+        <div class="metade sleft" >
+      
+          <input type="text" placeholder="nome" id="nome">
+          <input type="email" placeholder="E-mail" id="email">
+          <input type="tel" placeholder="Telefone" id="telefone">
+          <input type="cpf" placeholder="CPF" id="cpf">
+      
+        </div>
+      
+        <div class="metade-right">
+          <textarea name="mensagem" type="text" placeholder="Mesagem" ></textarea>
+        </div>  
+
+        <input type="submit" value="Enviar Dados" class="btn-submit" onclick="validar()">
+        <!-- <input type="submit" value="Enviar Dados" onclick="validar()" class="btn-submit"> -->
+      </form>
+<center>
+      <button onclick="darkMode()" class="submit1">Darkmode</button>
+      <button onclick="lightMode()" class="submit2">LightMode</button>
+    </center>
+
+     
+        <label class="label" for="chk">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+            <div class="ball"></div>
+
+        </label>
+
+        <script src="script.js"></script>
+</body>
+
+</html>
